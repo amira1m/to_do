@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:id="@+id/SignUp_Pic"
+        android:layout_width="152dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login" />
+
+    <EditText
+        android:id="@+id/Edit_Name_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/Text_Name_sign"
+        app:layout_constraintTop_toBottomOf="@+id/SignUp_Pic"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/Text_Name_sign"
+        android:layout_width="109dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="UserName"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUp_Pic" />
+
+    <TextView
+        android:id="@+id/Text_Pass_Sign"
+        android:layout_width="109dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="36dp"
+        android:text="Password"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/Edit_Pass_Sign"
+        app:layout_constraintTop_toBottomOf="@+id/Text_Name_sign" />
+
+    <EditText
+        android:id="@+id/Edit_Pass_Sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Name_sign"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <RadioGroup
+        android:id="@+id/Radio_Group"
+        android:layout_width="240dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="152dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text_Pass_Sign">
+
+        <RadioButton
+            android:id="@+id/Radio_Male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/Radio_Female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/Spinner_Sign"
+        android:layout_width="240dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="152dp"
+        android:entries="@array/Country_Op"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Radio_Group"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/But_Signup_Page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="156dp"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Spinner_Sign" />
+</androidx.constraintlayout.widget.ConstraintLayout>

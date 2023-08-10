@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Todo</string>
+
+    <string-array name="Country_Op">
+        <item> Egypt </item>
+        <item> Japan </item>
+        <item> Australia </item>
+        <item> Korea </item>
+        <item> Spain </item>
+        <item> Turkey </item>
+    </string-array>
+
+    <string-array name="grid">
+        <item>Your Tasks </item>
+        <item>Add Task </item>
+        <item>Your Profile </item>
+        <item> About Us</item>
+        <item>Logout</item>
+
+
+    </string-array>
+</resources>
